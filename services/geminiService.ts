@@ -1,4 +1,5 @@
 
+
 import { GoogleGenAI, Type, Chat } from "@google/genai";
 import type { AIAnalysisResult, Campaign, SentimentAnalysisResult, BudgetSimulationResult, GrowthOpportunity, ChurnableUser, ChurnPredictionResult, AdCreativeBrief, GeneratedAdCreative, ForecastDataPoint, Anomaly, CompetitorInfo, MarketTrend } from '../types';
 
@@ -398,7 +399,7 @@ export const generateAdImage = async (prompt: string): Promise<string> => {
 
     try {
         const response = await ai.models.generateImages({
-            model: 'imagen-3.0-generate-002',
+            model: 'imagen-4.0-generate-001',
             prompt: prompt,
             config: {
               numberOfImages: 1,
